@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--this code borrowed from...
+ PyScript - Run Python in the Browser! THE END of JavaScript??? (YouTube Channel: Patrick Loeber)
+ https://www.youtube.com/watch?v=du8vQC44PC4&t=24s
+ -->
+ <head>
+  <meta charset="utf-8">
+  <title>Pyscript-REPL.html</title>
+  <style>
+   h1,p{text-align:center;}
+  </style>
+  <link rel="stylesheet"
+        href="https://pyscript.net/alpha/pyscript.css"
+  >
+  </style>
+  <script defer 
+          src="https://pyscript.net/alpha/pyscript.js"
+  >
+  </script>
+ </head>
+ <body>
+  <h1><b>Pyscript REPL</b></h1>
+  <p>Tip: Type [Shift] + [ENTER] to evaluate a cell/
+   <br>or, press green arrow to the right to evaluate multiple lines of code:</p>
+  <py-repl id="my-repl" auto-generate="true"></py-repl>
+ </body>
+</html>
