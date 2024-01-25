@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+
+  <meta charset="utf-8">
+ 
+  <title>My1st PyScript</title>
+
+  <link rel="stylesheet" 
+        type="text/css"
+        href="https://pyscript.net/alpha/pyscript.css"
+  >
+
+  <script defer
+          src="https://pyscript.net/alpha/pyscript.js"
+  >
+  </script>
+
+ </head>
+
+ <body>
+
+  <py-script>
+   # This program outputs the numbers 1 to 10...each raised up to the power of the number themsleves...
+   n=[n for n in range(1,11)]
+   print(list(map(lambda x:x**x, n)))
+  </py-script>
+
+ </body>
+
+</html>
