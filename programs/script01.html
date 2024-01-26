@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ 
+ <head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title></title>
+
+  <link rel="stylesheet" type="text/css" href="https://pyscript.net/alpha/pyscript.css">
+
+  <script defer src="https://pyscript.net/alpha/pyscript.js">
+  </script>
+
+  <style>
+
+   /* links */
+
+   a:link{color:blue;text-decoration:none;}
+   a:hover{color:red;text-decoration:underline;}
+   a:visited{color:purple;}
+   a:active{color:pink;}
+
+   /* body */
+
+   body{margin:1cm;font-family:arial,verdana,sans-serif;}
+
+   /* header/footer */
+
+   header,footer{text-align:center;}
+   h1{color:blue;}
+   h2{color:green;text-align:center;}
+
+   /* general */
+
+   hr{border:2px solid black;color:red;}
+
+   /* classes */
+
+   .clsDateTimeStamp{color:red;font-style:italic;}
+
+   /* id's */
+
+   #idCopyrightMessage{font-weight:bold;background-color:black;color:white;}
+
+  </style>
+
+ </head>
+
+ <body>
+
+  <header>
+   <h1>PyScript</h1>
+  </header>
+
+  <main>
+
+   <hr>
+
+   <h2>Output section...</h2>
+
+   <hr>
+
+   <py-script>
+    print("Numeric literal: print(0)")
+    print(0)
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("String literal: print(""\"Hello, world\")")
+    print("Hello,world")
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("Numeric variable: n=0")
+    n=0
+    print(n)
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("String variable: hw=\"Hello, world\"")
+    hw="Hello, world"
+    print(hw)
+   </py-script>
+
+   <hr>
+   <py-script>
+    print("for loop: for n in range(1,11):")
+    for n in range(1,11):
+       print(n)
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("maths function: add(n1,n2)")
+    def add(x,y):
+       print(x+y)
+    add(3,4)
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("maths function: printASCIICodeLetter(n): print(chr(n+64))")
+    def printASCIICodeLetter(n):
+       print(chr(n+64))
+    for n in range(1,27): 
+       printASCIICodeLetter(n)
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("maths function: printASCIICodeNumber(letter): print(ord(letter))")
+    def printASCIICodeNumber(letter):
+       print(ord(letter))
+    for n in range(1,27): 
+       printASCIICodeNumber(chr(n+64))
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("maths function: lAdd(5) : lAdd=lambda n:n+n")
+    lAdd=lambda n:n+n
+    lAdd(5) 
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("maths function: list/map/lambda : n=[1,2,3,4] : print(n) : print(list(map(lambda n:n+n,n)))")
+    n=[1,2,3,4]
+    print(n)
+    print(list(map(lambda x:x+x,n)))
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("english function: word.upper() : word=\"some text string\"")
+    word="some text string"
+    print(word.upper()) 
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("english function: word.lower() : word=\"SOME TEXT STRING\"")
+    word="SOME TEXT STRING"
+    print(word.lower()) 
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("internal library call: import math : print(math.pi)")
+    import math
+    print(math.pi) 
+   </py-script>
+
+   <hr>
+
+   <py-script>
+    print("internal library call: import random : print(random.randint(1,6))")
+    import random
+    print(random.randint(1,6)) 
+   </py-script>
+
+   <hr>
+
+   <py-env>
+    - numpy
+   </py-env>
+
+   <py-script>
+    import numpy as np
+    print("External library call: import numpy as np: print(np.arange(10)/np.arange(1,10)/np.arange(1,10,2))")
+    print(np.arange(10)) 
+    print(np.arange(1,10))
+    print(np.arange(1,10,2))
+   </py-script>
+
+  </main>
+
+  <hr>
+
+  <footer>
+
+   <p>
+
+    Email:
+    <a href="mailto:pramnora@yahoo.com">
+     pramnora@yahoo.com
+    </a>
+
+    <br>
+
+    <span id="idCopyrightMessage">
+     &copy;2024, Mr. Paul Ramnora./All rights reserved.
+    </span>
+
+    <br>
+
+    Page created:
+    <span class="clsDateTimeStamp">
+     Fri 26 Jan 09:58 AM GMT
+    </span>
+
+    <br>
+
+    Last updated: 
+    <span class="clsDateTimeStamp">
+     Fri 26 Jan 09:58 AM GMT
+    </span>
+
+   </p>
+
+  </footer>
+
+ </body> 
+
+</html>
